@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Enchentes - Mapa de Risco</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (igual em todas as páginas) -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="./assets/images/logo.jpg" alt="SOS Enchentes" width="70">
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solucao.html">Solução</a></li>
+                <li><a href="mapa.html">Mapa de Risco</a></li>
+                <li><a href="alertas.html">Alertas</a></li>
+                <li><a href="prevencao.html">Prevenção</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="integrantes.html">Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h1>Mapa de Áreas de Risco</h1>
+            <p>Visualize em tempo real as áreas com maior probabilidade de enchentes e alagamentos.</p>
+        </section>
+
+        <section>
+            <div class="map-container">
+                <img src="./assets/images/image.png" alt="Mapa de áreas de risco de enchentes" usemap="#floodmap">
+                <map name="floodmap">
+                    <area shape="rect" coords="100,150,200,250" alt="Centro" class="map-area" data-area="Centro - Risco Alto">
+                    <area shape="circle" coords="300,350,50" alt="Zona Norte" class="map-area" data-area="Zona Norte - Risco Médio">
+                    <area shape="poly" coords="400,200,450,250,400,300" alt="Zona Sul" class="map-area" data-area="Zona Sul - Risco Baixo">
+                </map>
+                <div class="map-legend">
+                    <h3>Legenda</h3>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #ea4335;"></div>
+                        <span>Risco Alto</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #fbbc05;"></div>
+                        <span>Risco Médio</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #34a853;"></div>
+                        <span>Risco Baixo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-info">
+                <h2>Como interpretar o mapa</h2>
+                <p>As áreas destacadas no mapa representam locais com histórico de enchentes ou características geográficas que aumentam o risco.</p>
+                <ul>
+                    <li><strong>Vermelho:</strong> Risco alto - Áreas que frequentemente sofrem com enchentes severas</li>
+                    <li><strong>Amarelo:</strong> Risco médio - Áreas com ocorrências ocasionais de alagamentos</li>
+                    <li><strong>Verde:</strong> Risco baixo - Áreas geralmente seguras, mas que podem ser afetadas em eventos extremos</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (igual em todas as páginas) -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <section class="footer-section">
+                <h3>Sobre o projeto</h3>
+                <p>Sistema de alerta e prevenção contra enchentes utilizando tecnologia inovadora para proteger comunidades.</p>
+            </section>
+            <section class="footer-section">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li><a href="https://www.gov.br/mdr/pt-br/assuntos/protecao-e-defesa-civil" target="_blank">Defesa Civil</a></li>
+                    <li><a href="https://www.cemaden.gov.br" target="_blank">CEMADEN</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Contato</h3>
+                <p>contato@sosenchentes.com</p>
+                <p>(11) 98765-4321</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 SOS Enchentes | Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
